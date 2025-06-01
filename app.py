@@ -3,13 +3,21 @@ from utils.parser import extract_text_from_pdf
 import google.generativeai as genai
 import os
 
-from dotenv import load_dotenv
-load_dotenv()
-
-# Load your Google API key
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 st.title("📄 Smart Resume Analyzer (Powered by Gemini)")
+
+api_key = st.text_input("🔑 Enter your Gemini API Key", type="password")
+
+if not api_key:
+    st.warning("Please enter your Gemini API key to use the app.")
+    st.stop()
+
+# Step 2: Configure Gemini with user-provided API key
+try:
+    genai.configure(api_key=api_key)
+except Exception as e:
+    st.error(f"❌ Invalid API Key: {str(e)}")
+    st.stop()
 
 uploaded_file = st.file_uploader("Upload your resume (PDF)", type="pdf")
 
