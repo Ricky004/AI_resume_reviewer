@@ -16,11 +16,15 @@ An AI-powered resume analyzer built with **Streamlit**, **Google Gemini (Bard)**
 ## 🖼️ Demo Screenshot
 
 ![App Screenshot](images/image-1.png)
-![App Screenshot](images/image-2.png)
-![App Screenshot](images/image-3.png)
-![App Screenshot](images/image-4.png)
 
-> Replace `images/screenshot.png` with your actual image path. Make sure it's committed to your repo.
+---
+![App Screenshot](images/image-2.png)
+
+---
+![App Screenshot](images/image-3.png)
+
+---
+![App Screenshot](images/image-4.png)
 
 ---
 
@@ -37,5 +41,5 @@ An AI-powered resume analyzer built with **Streamlit**, **Google Gemini (Bard)**
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/your-username/smart-resume-analyzer.git
+   git clone https://github.com/Ricky004/AI_resume_reviewer.git
    cd smart-resume-analyzer
